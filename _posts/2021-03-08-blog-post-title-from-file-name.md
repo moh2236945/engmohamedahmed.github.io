@@ -101,4 +101,78 @@ Each kernel of the filter "slides" over its respective input channel, producing 
 
 Some kernels may have greater weight than others to emphasize certain input channels.
 
+![](https://github.com/moh2236945/engmohamedahmed.github.io/blob/main/_posts/conv2.gif)
+
+Each core of the filter produces its own processed version which is then summed so that the entire filter produces an overall output channel.
+
+![](https://github.com/moh2236945/engmohamedahmed.github.io/blob/main/_posts/conv3.gif)
+
+Finally, there is a term: "bias". Each output filter has a bias term, and the bias is added to the output channel to produce the final output channel.
+
+![](https://github.com/moh2236945/engmohamedahmed.github.io/blob/main/_posts/conv4.gif)
+
+Bias in a neural network is required to shift the activation function across the plane either towards the left or the right. 
+
+**Difference between weight and bias in a convolutional neural network (CNN)**
+
+**Weights** refer to the parameters that are learned by our CNN model during training. These weights tell us how much importance each feature has when making a prediction from  data. A higher weight means higher importance, while lower weights mean lesser importance for a specific feature. 
+
+In other words, weights represent the strength of connection between different neurons of the model and helps capture relationships between data points as they pass through 
+
+layers of filters and nodes within the network.
+
+**Bias** 
+
+works alongside weights to make predictions more accurate or add additional information to them beyond what just using weights alone can do. Unlike Weights, Bias 
+
+values remain constant throughout training since they do not change with respect to any given input vector or example image you may input into your model’s system when 
+
+running it through its training algorithm simulations. It essentially introduces an offset or “bias” value which helps shift a model's predicted outcome either up or down 
+
+depending on whether this bias value is positive or negative respectively - aiding an overall better prediction accuracy from your trained models output given its provided 
+
+inputs at test time.
+
+**2-Padding**
+
+refers to edge filling of the input during the convolution operation to control the size and shape of the output feature map. Common padding methods include:
+
+![](https://github.com/moh2236945/engmohamedahmed.github.io/blob/main/_posts/padd1.gif)
+
+**2-1.1 Valid padding**
+
+Without padding, the output size is:  (W - F + 1) x (H - F + 1)
+
+Where W is the input width, H is the input height, and F is the convolution kernel size.
+
+**2-1.2. Same padding**
+
+Also known as Zero padding, it will evenly fill the edges of the input image with zeros so that the size of the output feature map is the same as the input.
+
+The output size is: W x H
+
+**2-1.3. Full padding**
+
+Also called **Full convolution**, F-1 circles 0 are filled in the entire input image boundary.
+
+The output size is: (W + F - 1) x (H + F - 1)
+
+**2-2 The main functions of PADDING:**
+
+- Control the size and shape of the output feature map
+  
+- Maintain image edge information to avoid loss
+  
+- Increase network depth while keeping the receptive field unchanged
+  
+Care needs to be taken to avoid excessive padding leading to overfitting. 
+
+Usually Same padding is used the most, which can maintain the output size without being too complicated.
+
+**2-3 what is the relationship between padding and translation invariance?**
+
+Without padding, the output of convolution does not seem to reflect the position very well:
+
+
+
 
