@@ -173,11 +173,11 @@ Usually Same padding is used the most, which can maintain the output size withou
 
 Without padding, the output of convolution does not seem to reflect the position very well:
 
-![](https://github.com/moh2236945/engmohamedahmed.github.io/blob/main/_posts/padand translationvariances1.png)
+![](https://github.com/moh2236945/engmohamedahmed.github.io/blob/main/_posts/padand1.png)
 
 If padding is added, the output of the convolution will reflect strong position information:
 
-![](https://github.com/moh2236945/engmohamedahmed.github.io/blob/main/_posts/padand translationvariances2.png)
+![](https://github.com/moh2236945/engmohamedahmed.github.io/blob/main/_posts/padand2.png)
 
 the addition of padding brings about translational variability , making the output and input spatially corresponding. 
 
