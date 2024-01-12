@@ -86,4 +86,19 @@ a type of matrix operation, consisting of a kernel, a small matrix of weights, t
 --------------
 **1-Convolution**
 
+![](https://github.com/moh2236945/engmohamedahmed.github.io/blob/main/_posts/conv1.gif)
+
+---
+This kernel “slides” over the 2D input data, performing an elementwise multiplication with the part of the input it is 
+
+currently on, and then summing up the results into a single output pixel.
+
+The kernel repeats this process for every location it slides over, converting a 2D matrix of features into yet another 2D 
+
+matrix of features
+
+Each kernel of the filter "slides" over its respective input channel, producing individual processed versions. 
+
+Some kernels may have greater weight than others to emphasize certain input channels.
+
 
