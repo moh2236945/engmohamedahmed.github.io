@@ -240,6 +240,8 @@ shapes and objects) in a hierarchical manner.
 
 **5-Convolution v.s. Cross-correlation**
 
+![](https://github.com/moh2236945/engmohamedahmed.github.io/blob/main/_posts/crossvscorr.gif)
+
 **Cross-Correlation:**
 
 **Correlation** is the process of moving a filter mask (kernel)over the image and computing the sum of products at each location. Correlation is the function of displacement of the filter. In other words, the first value of the correlation corresponds to zero displacement of the filter, the second value corresponds to one unit of 
@@ -315,6 +317,7 @@ greater advantages. Currently, this method is used to calculate convolution in c
 -----
 
 **7-Fully Connected Layer(Dense Layer)**
+
 1-Fully connected layers connect every neuron in one layer to every neuron in another layer. It is in principle the same as the traditional multi-layer perceptron neural network.
 
 2-FC layers are typically found towards the end of a neural network architecture and are responsible for producing final output predictions.
