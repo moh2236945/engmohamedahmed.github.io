@@ -374,11 +374,11 @@ modules, the higher the parallelism of training. At the same time, reasonable mo
 
 explosion.
 
-**1.1 HSIC Bottleneck **
+**1.1 HSIC Bottleneck**
 
 -Module loss design
 
-![](https://github.com/moh2236945/engmohamedahmed.github.io/blob/main/_posts/hsic.gif)
+![](https://github.com/moh2236945/engmohamedahmed.github.io/blob/main/_posts/hsic.jpg)
 
 This method utilizes **HSIC (Hilbert-Schmidt independence criterion)** HSIC bottleneck is an alternative to conventional backpropagation, to measure the correlation between the 
 
